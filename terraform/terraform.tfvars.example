@@ -1,0 +1,12 @@
+# Copy to terraform.tfvars and customize
+# cp terraform.tfvars.example terraform.tfvars
+
+aws_region   = "us-west-2"
+environment  = "dev"
+stack_name   = "smart-advisor"
+network_mode = "PUBLIC"
+image_tag    = "latest"
+
+# Update these with your frontend URLs
+cognito_callback_urls = ["https://localhost:3000/callback"]
+cognito_logout_urls   = ["https://localhost:3000/logout"]
